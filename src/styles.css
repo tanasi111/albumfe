@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(//db.onlinewebfonts.com/c/899514ebd390e894ad403011515cde6f?family=Helvetica+Neue);
+
 body {
   margin: 0;
+  font-family: "Helvetica Neue";
 }

@@ -5,3 +5,9 @@
   justify-content: center;
   height: 100vh;
 }
+
+input {
+  border-style: hidden hidden solid hidden;
+  border-color: black;
+  border-width: 2px;
+}
