@@ -1,9 +1,16 @@
 .login {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  /* width: 100vw; */
   align-items: center;
   justify-content: center;
-  height: 100vh;
+}
+
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  width: 50%;
 }
 
 .login-label {}
@@ -12,4 +19,18 @@
   border-style: hidden hidden solid hidden;
   border-color: black;
   border-width: 2px;
+  height: 81px;
+}
+
+.login-buton {
+  height: 81px;
+  background-color: #FFC23B;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.login-buton:hover {
+  cursor: pointer;
 }
