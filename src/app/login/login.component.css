@@ -8,17 +8,23 @@
 .login-form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 10px;
-  width: 50%;
+  grid-row-gap: 20px;
+  width: 40%;
 }
 
-.login-label {}
+.login-label {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 78px;
+}
 
 .login-input {
   border-style: hidden hidden solid hidden;
   border-color: black;
   border-width: 2px;
-  height: 81px;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 100;
 }
 
 .login-buton {
@@ -27,6 +33,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
+  letter-spacing: 7.27px;
   color: #FFFFFF;
   border: 0;
 }
