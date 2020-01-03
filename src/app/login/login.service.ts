@@ -21,8 +21,7 @@ export class LoginService {
 
     console.log('username: ' + username);
     console.log('email: ' + email);
-
-    return this.http.get(`${this.API_URL}/users`);
+    return this.http.get(`${this.API_URL}/users?username=${username}&email=${email}`);
 
   }
 
