@@ -4,15 +4,23 @@
         class="login-form">
 
     <label class="login-label">Ulogujes se</label>
+
+
     <input formControlName="username"
            class="login-input"
            type="text"
            placeholder="korisnicko ime">
+    <span *ngIf="username && username.invalid">
+      username is required.
+    </span>
+
+
     <input formControlName="email"
            class="login-input"
            type="text"
            placeholder="email">
     <button class="login-buton"
+            [disabled]="!loginForm.valid"
             (click)="login()">KLIKNI</button>
 
   </form>

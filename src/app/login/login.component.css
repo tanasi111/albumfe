@@ -41,3 +41,7 @@
 .login-buton:hover {
   cursor: pointer;
 }
+
+.login-input.ng-invalid.ng-touched {
+  color: red;
+}
