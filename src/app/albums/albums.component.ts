@@ -9,12 +9,15 @@ import { AlbumService } from './album.service';
 export class AlbumsComponent implements OnInit {
 
   albums: any;
+  user: any;
+  lastName: string;
 
   constructor(
     albumService: AlbumService
   ) {
-    const user: any = JSON.parse(window.localStorage.getItem('user'));
-    const userId: string = user[0].id;
+    this.user = JSON.parse(window.localStorage.getItem('user'));
+    const userId: string = this.user[0].id;
+    this.lastName = this.user[0].name.split(' ').pop();
     albumService.getUserAlbums(userId)
       .subscribe(
         data => {

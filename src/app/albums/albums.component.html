@@ -1,3 +1,6 @@
+<p *ngIf="user"
+   class="albums-owner">Foto album familije {{ lastName }}</p>
+
 <div class="albums">
 
   <app-album-preview *ngFor="let album of albums"
