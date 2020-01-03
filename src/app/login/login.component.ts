@@ -11,14 +11,17 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginForm = new FormGroup({
-    username: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required]),
+    username: new FormControl('Antonette', [Validators.required]),
+    email: new FormControl('Shanna@melissa.tv', [Validators.required]),
   });
+  loginError: boolean;
 
   constructor(
     private loginService: LoginService,
     private router: Router,
-  ) { }
+  ) {
+    this.loginError = false;
+  }
 
   ngOnInit() { }
 
@@ -30,7 +33,7 @@ export class LoginComponent implements OnInit {
           if (user.length === 1) {
             this.router.navigate(['/albums']);
           } else {
-            console.log('wrong username or email');
+            this.loginError = true;
           }
         },
         err => console.log(err)

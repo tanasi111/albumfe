@@ -45,3 +45,8 @@
 .login-input.ng-invalid.ng-touched {
   color: red;
 }
+
+.login-error {
+  text-align: center;
+  color: red;
+}
