@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlbumService } from './album.service';
 
 @Component({
   selector: 'app-albums',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlbumsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    albumService: AlbumService
+  ) {
+    // const user: any = window.localStorage.getItem('user');
+    // const userId = user.userID;
+  }
 
   ngOnInit() {
   }
