@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { LoginService } from './login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,14 +15,24 @@ export class LoginComponent implements OnInit {
     email: new FormControl('', [Validators.required]),
   });
 
-  constructor(private loginService: LoginService) { }
+  constructor(
+    private loginService: LoginService,
+    private router: Router,
+  ) { }
 
   ngOnInit() { }
 
   login() {
     this.loginService.login(this.loginForm.value.username, this.loginForm.value.email)
       .subscribe(
-        response => console.log(response),
+        data => {
+          const user: any = data;
+          if (user.length === 1) {
+            this.router.navigate(['/albums']);
+          } else {
+            console.log('wrong username or email');
+          }
+        },
         err => console.log(err)
       );
   }
