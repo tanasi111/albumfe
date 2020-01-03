@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { AlbumPreviewComponent } from './albums/album-preview/album-preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    AlbumPreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,8 @@ export class AlbumsComponent implements OnInit {
     albumService: AlbumService
   ) {
     const user: any = JSON.parse(window.localStorage.getItem('user'));
-    albumService.getUserAlbums(user[0].id)
+    const userId: string = user[0].id;
+    albumService.getUserAlbums(userId)
       .subscribe(
         data => {
           console.log(data);
