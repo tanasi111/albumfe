@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
         data => {
           const user: any = data;
           if (user.length === 1) {
+            window.localStorage.setItem('loged_in', 'LOGED_IN');
             this.router.navigate(['/albums']);
           } else {
             this.loginError = true;
