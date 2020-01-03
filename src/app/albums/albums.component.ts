@@ -8,11 +8,19 @@ import { AlbumService } from './album.service';
 })
 export class AlbumsComponent implements OnInit {
 
+  albums: any;
+
   constructor(
     albumService: AlbumService
   ) {
-    // const user: any = window.localStorage.getItem('user');
-    // const userId = user.userID;
+    const user: any = JSON.parse(window.localStorage.getItem('user'));
+    albumService.getUserAlbums(user[0].id)
+      .subscribe(
+        data => {
+          console.log(data);
+        },
+        err => console.log(err)
+      );
   }
 
   ngOnInit() {

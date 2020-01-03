@@ -7,14 +7,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class LoginService {
 
   API_URL = 'https://jsonplaceholder.typicode.com';
-  private httpOptions: any;
+  // private httpOptions: any;
 
   constructor(
     private http: HttpClient
   ) {
-    this.httpOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-    };
+    // this.httpOptions = {
+    //   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    // };
   }
 
   public login(username: string, email: string) {
