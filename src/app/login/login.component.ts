@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { LoginService } from './login.service';
 import { Router } from '@angular/router';
+import { AuthGuardService } from '../auth-guard.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,11 @@ export class LoginComponent implements OnInit {
   constructor(
     private loginService: LoginService,
     private router: Router,
+    private authGuardService: AuthGuardService
   ) {
+    if (this.authGuardService.logedIn()) {
+      this.router.navigate(['/albums']);
+    }
     this.loginError = false;
   }
 
