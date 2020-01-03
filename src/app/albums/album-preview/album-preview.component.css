@@ -12,6 +12,7 @@
   font-size: 32px;
   font-weight: 100;
   line-height: 39px;
+  transition: 0.1s;
 }
 
 .album:hover {
