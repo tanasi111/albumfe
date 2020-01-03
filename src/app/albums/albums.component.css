@@ -1,7 +1,17 @@
 .albums {
+  padding: 70px;
+}
+
+.albums-owner {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 78px;
+  padding-bottom: 30px;
+}
+
+.albums-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 40px;
-  padding: 70px;
 }
