@@ -1,19 +1,20 @@
 <div class="login">
 
-  <div class="login-form">
+  <form [formGroup]="loginForm"
+        class="login-form">
 
     <label class="login-label">Ulogujes se</label>
-
-    <input class="login-input"
+    <input formControlName="username"
+           class="login-input"
            type="text"
            placeholder="korisnicko ime">
-
-    <input class="login-input"
+    <input formControlName="email"
+           class="login-input"
            type="text"
            placeholder="email">
+    <button class="login-buton"
+            (click)="login()">KLIKNI</button>
 
-    <button class="login-buton">KLIKNI</button>
-
-  </div>
+  </form>
 
 </div>
