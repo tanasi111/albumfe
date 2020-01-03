@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-album-preview',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./album-preview.component.css']
 })
 export class AlbumPreviewComponent implements OnInit {
+
+  @Input() album: any;
 
   constructor() { }
 

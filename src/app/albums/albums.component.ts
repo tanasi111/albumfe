@@ -18,7 +18,7 @@ export class AlbumsComponent implements OnInit {
     albumService.getUserAlbums(userId)
       .subscribe(
         data => {
-          console.log(data);
+          this.albums = data;
         },
         err => console.log(err)
       );

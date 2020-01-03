@@ -1,5 +1,6 @@
 <div class="albums">
 
-  <app-album-preview></app-album-preview>
+  <app-album-preview *ngFor="let album of albums"
+                     [album]="album"></app-album-preview>
 
 </div>
