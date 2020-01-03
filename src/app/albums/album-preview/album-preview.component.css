@@ -1,15 +1,20 @@
+:root {
+  --album-title-color: #000000;
+}
+
 .album-image {
   max-width: 100%;
 }
 
 .album-title {
-  color: #000000;
+  /* --album-title-color: #000000; */
+  color: var(--album-title-color);
   font-size: 32px;
   font-weight: 100;
   line-height: 39px;
 }
 
-.album-title:hover {
+.album:hover {
   cursor: pointer;
-  color: #FFC23B;
+  --album-title-color: #FFC23B;
 }
