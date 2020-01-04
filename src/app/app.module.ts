@@ -10,6 +10,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AlbumPreviewComponent } from './albums/album-preview/album-preview.component';
 import { AlbumPhotosComponent } from './albums/album-photos/album-photos.component';
 import { PhotoComponent } from './albums/photo/photo.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PhotoComponent } from './albums/photo/photo.component';
     PhotoComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
