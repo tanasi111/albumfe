@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 10px 10px;
+  grid-template-rows: 10px 10px;
+  grid-gap: 5px;
+}
+
+.layout-grid:hover {
+  cursor: pointer;
+}
+
+.layout-grid-item {
+  background-color: #E5E5E5;
+}
+
+.layout-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.layout-list:hover {
+  cursor: pointer;
+}
+
+.layout-list-item {
+  width: 54px;
+  height: 3px;
+  background-color: #E5E5E5;
+}
