@@ -26,5 +26,5 @@
 }
 
 .set-list {
-  grid-template-columns: 1fr;
+  grid-template-columns: calc(100%/3 - 5px);
 }
