@@ -5,3 +5,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue";
 }
+
+::placeholder {
+  color: #C7C7C7;
+}

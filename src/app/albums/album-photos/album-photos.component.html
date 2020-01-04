@@ -7,6 +7,12 @@
     <app-layout></app-layout>
   </div>
 
+
+  <input class="album-search-input"
+         type="search"
+         placeholder="Pretrazi" />
+
+
   <div class="album-photos"
        [class.set-list]="!layoutService.gridLayout">
     <app-photo *ngFor="let photo of photos"
