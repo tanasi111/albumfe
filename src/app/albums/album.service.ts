@@ -13,7 +13,11 @@ export class AlbumService {
   ) { }
 
   getUserAlbums(userId: string) {
-    console.log('userId: ' + userId);
     return this.http.get(`${this.API_URL}/albums?userId=${userId}`);
   }
+
+  getAlbumPhotos(albumId: string) {
+    return this.http.get(`${this.API_URL}/photos?albumId=${albumId}`);
+  }
+
 }
