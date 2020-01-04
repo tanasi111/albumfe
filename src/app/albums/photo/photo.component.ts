@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PhotoComponent implements OnInit {
 
+  @Input() albumTitle: string;
   @Input() photo: any;
 
   constructor() { }

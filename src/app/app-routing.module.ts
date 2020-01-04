@@ -9,7 +9,7 @@ import { AlbumPhotosComponent } from './albums/album-photos/album-photos.compone
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'albums', component: AlbumsComponent, canActivate: [AuthGuardService] },
-  { path: 'albums/:id', component: AlbumPhotosComponent, canActivate: [AuthGuardService] },
+  { path: 'albums/:id/:title', component: AlbumPhotosComponent, canActivate: [AuthGuardService] },
 ];
 
 @NgModule({

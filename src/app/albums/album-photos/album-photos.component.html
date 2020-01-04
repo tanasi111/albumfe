@@ -1,11 +1,11 @@
 <div class="album">
 
-  <div *ngIf="user"
-       class="album-title">Foto album familije {{ lastName }}</div>
+  <div class="album-title"> {{ albumTitle }}</div>
 
   <div class="album-photos">
 
     <app-photo *ngFor="let photo of photos"
+               [albumTitle]="albumTitle"
                [photo]="photo"></app-photo>
 
   </div>

@@ -10,6 +10,7 @@ import { AlbumService } from '../album.service';
 export class AlbumPhotosComponent implements OnInit {
 
   albumId: string;
+  albumTitle: string;
   private sub: any;
   photos: any;
 
@@ -21,7 +22,9 @@ export class AlbumPhotosComponent implements OnInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       const id = 'id';
+      const title = 'title';
       this.albumId = params[id];
+      this.albumTitle = params[title];
       console.log('album id: ' + this.albumId);
       this.getAlbumPhotos(this.albumId);
     });
