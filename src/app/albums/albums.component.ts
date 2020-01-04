@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlbumService } from './album.service';
+import { LayoutService } from '../layout.service';
 
 @Component({
   selector: 'app-albums',
@@ -13,7 +14,8 @@ export class AlbumsComponent implements OnInit {
   lastName: string;
 
   constructor(
-    albumService: AlbumService
+    albumService: AlbumService,
+    private layoutService: LayoutService
   ) {
     this.user = JSON.parse(window.localStorage.getItem('user'));
     const userId: string = this.user[0].id;

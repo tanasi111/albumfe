@@ -4,7 +4,8 @@
     <div class="albums-owner">Foto album familije {{ lastName }}</div>
     <app-layout></app-layout>
   </div>
-  <div class="albums-list">
+  <div class="albums-list"
+       [class.set-list]="!layoutService.gridLayout">
     <app-album-preview *ngFor="let album of albums"
                        [album]="album"></app-album-preview>
   </div>

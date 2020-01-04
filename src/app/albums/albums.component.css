@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+  grid-area: album-info-and-layout;
 }
 
 .albums-owner {
@@ -22,4 +23,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 40px;
+}
+
+.set-list {
+  grid-template-columns: 1fr;
 }
