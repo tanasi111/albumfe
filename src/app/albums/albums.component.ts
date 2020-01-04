@@ -17,6 +17,9 @@ export class AlbumsComponent implements OnInit {
   ) {
     this.user = JSON.parse(window.localStorage.getItem('user'));
     const userId: string = this.user[0].id;
+
+    console.log(userId);
+
     this.lastName = this.user[0].name.split(' ').pop();
     albumService.getUserAlbums(userId)
       .subscribe(
