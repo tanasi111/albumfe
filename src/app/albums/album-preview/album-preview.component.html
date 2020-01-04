@@ -1,7 +1,10 @@
 <div class="album"
+     [class.set-list]="!layoutService.gridLayout"
      [routerLink]="['/albums', album.id, album.title]">
   <img class="album-image"
        src="https://i.picsum.photos/id/{{album.id}}/640/480.jpg">
-  <div class="album-title">{{album.title}}</div>
-  <div class="album-createdby">kreirao: tralala</div>
+  <div>
+    <div class="album-title">{{album.title}}</div>
+    <div class="album-createdby">kreirao: tralala</div>
+  </div>
 </div>

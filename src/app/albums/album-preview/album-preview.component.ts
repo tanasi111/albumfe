@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LayoutService } from 'src/app/layout.service';
 
 @Component({
   selector: 'app-album-preview',
@@ -9,7 +10,9 @@ export class AlbumPreviewComponent implements OnInit {
 
   @Input() album: any;
 
-  constructor() { }
+  constructor(
+    private layoutService: LayoutService
+  ) { }
 
   ngOnInit() {
   }

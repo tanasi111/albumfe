@@ -19,3 +19,9 @@
   cursor: pointer;
   --album-title-color: #FFC23B;
 }
+
+.set-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 30px;
+}
