@@ -1,4 +1,5 @@
-<div class="photo">
+<div class="photo"
+     [class.set-list]="!layoutService.gridLayout">
   <img class="photo-image"
        src="https://i.picsum.photos/id/{{photo.id}}/640/480.jpg">
   <div class="photo-title">{{photo.title}}</div>

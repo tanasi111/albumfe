@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../album.service';
+import { LayoutService } from 'src/app/layout.service';
 
 @Component({
   selector: 'app-album-photos',
@@ -16,7 +17,8 @@ export class AlbumPhotosComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private albumService: AlbumService
+    private albumService: AlbumService,
+    private layoutService: LayoutService
   ) { }
 
   ngOnInit() {

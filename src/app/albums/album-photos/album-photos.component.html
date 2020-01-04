@@ -7,7 +7,8 @@
     <app-layout></app-layout>
   </div>
 
-  <div class="album-photos">
+  <div class="album-photos"
+       [class.set-list]="!layoutService.gridLayout">
     <app-photo *ngFor="let photo of photos"
                [albumTitle]="albumTitle"
                [photo]="photo"></app-photo>

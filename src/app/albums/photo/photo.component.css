@@ -13,3 +13,9 @@
 .photo:hover {
   cursor: pointer;
 }
+
+.set-list {
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  grid-column-gap: 30px;
+}

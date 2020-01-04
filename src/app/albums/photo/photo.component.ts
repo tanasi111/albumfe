@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LayoutService } from 'src/app/layout.service';
 
 @Component({
   selector: 'app-photo',
@@ -10,7 +11,9 @@ export class PhotoComponent implements OnInit {
   @Input() albumTitle: string;
   @Input() photo: any;
 
-  constructor() { }
+  constructor(
+    private layoutService: LayoutService
+  ) { }
 
   ngOnInit() {
   }
