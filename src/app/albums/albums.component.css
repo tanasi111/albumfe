@@ -2,7 +2,7 @@
   padding: 70px;
 }
 
-.albums-owner-and-layout {
+.album-info-and-layout {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
