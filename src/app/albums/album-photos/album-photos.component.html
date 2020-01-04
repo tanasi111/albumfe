@@ -1,3 +1,13 @@
-<p>album-photos works!</p>
+<div class="album">
 
-{{ photos | json }}
+  <div *ngIf="user"
+       class="album-title">Foto album familije {{ lastName }}</div>
+
+  <div class="album-photos">
+
+    <app-photo *ngFor="let photo of photos"
+               [photo]="photo"></app-photo>
+
+  </div>
+
+</div>

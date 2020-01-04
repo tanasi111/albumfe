@@ -1,0 +1,17 @@
+.album {
+  padding: 70px;
+}
+
+.album-title {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 78px;
+  padding-bottom: 30px;
+}
+
+.album-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+}
