@@ -1,13 +1,22 @@
 <div class="layout">
-  <div class="layout-grid">
-    <div class="layout-grid-item"></div>
-    <div class="layout-grid-item"></div>
-    <div class="layout-grid-item"></div>
-    <div class="layout-grid-item"></div>
+  <div class="layout-grid"
+       (click)="setLayout('GRID_LAYOUT')">
+    <div [class.picked]="layoutService.gridLayout"
+         class="layout-grid-item"></div>
+    <div [class.picked]="layoutService.gridLayout"
+         class="layout-grid-item"></div>
+    <div [class.picked]="layoutService.gridLayout"
+         class="layout-grid-item"></div>
+    <div [class.picked]="layoutService.gridLayout"
+         class="layout-grid-item"></div>
   </div>
-  <div class="layout-list">
-    <div class="layout-list-item"></div>
-    <div class="layout-list-item"></div>
-    <div class="layout-list-item"></div>
+  <div class="layout-list"
+       (click)="setLayout('LIST_LAYOUT')">
+    <div [class.picked]="!layoutService.gridLayout"
+         class="layout-list-item"></div>
+    <div [class.picked]="!layoutService.gridLayout"
+         class="layout-list-item"></div>
+    <div [class.picked]="!layoutService.gridLayout"
+         class="layout-list-item"></div>
   </div>
 </div>

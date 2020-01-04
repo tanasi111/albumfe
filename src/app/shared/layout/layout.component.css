@@ -34,3 +34,7 @@
   height: 3px;
   background-color: #E5E5E5;
 }
+
+.picked {
+  background-color: black;
+}
