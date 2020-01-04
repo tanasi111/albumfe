@@ -1,8 +1,10 @@
 <div class="albums">
 
-  <div *ngIf="user"
-       class="albums-owner">Foto album familije {{ lastName }}</div>
-
+  <div class="albums-owner-and-layout">
+    <div *ngIf="user"
+         class="albums-owner">Foto album familije {{ lastName }}</div>
+    <app-layout></app-layout>
+  </div>
   <div class="albums-list">
     <app-album-preview *ngFor="let album of albums"
                        [album]="album"></app-album-preview>

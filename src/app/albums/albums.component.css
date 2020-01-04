@@ -2,11 +2,19 @@
   padding: 70px;
 }
 
+.albums-owner-and-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 .albums-owner {
   font-size: 64px;
   font-weight: 100;
   line-height: 78px;
-  padding-bottom: 30px;
 }
 
 .albums-list {
