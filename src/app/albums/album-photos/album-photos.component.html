@@ -1,16 +1,16 @@
 <div class="back-button"
      [routerLink]="['/albums']">&larr; povratak</div>
-
 <div class="album">
 
-  <div class="album-title"> {{ albumTitle }}</div>
+  <div class="album-info-and-layout">
+    <div class="album-title"> {{ albumTitle }}</div>
+    <app-layout></app-layout>
+  </div>
 
   <div class="album-photos">
-
     <app-photo *ngFor="let photo of photos"
                [albumTitle]="albumTitle"
                [photo]="photo"></app-photo>
-
   </div>
 
 </div>
