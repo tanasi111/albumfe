@@ -10,12 +10,13 @@
 
   <input class="album-search-input"
          type="search"
-         placeholder="Pretrazi" />
+         placeholder="Pretrazi"
+         [(ngModel)]="searchText" />
 
 
   <div class="album-photos"
        [class.set-list]="!layoutService.gridLayout">
-    <app-photo *ngFor="let photo of photos"
+    <app-photo *ngFor="let photo of photos | filter:searchText"
                [albumTitle]="albumTitle"
                [photo]="photo"></app-photo>
   </div>
