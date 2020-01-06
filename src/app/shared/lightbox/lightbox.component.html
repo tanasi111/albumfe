@@ -1,5 +1,9 @@
 <aside class="modal"
-       [class.show-modal]="lightboxService.showModal">
+       [class.show-modal]="lightboxService.showModal"
+       [class.hide-modal]="!lightboxService.showModal">
+
+  <div class="close"
+       (click)="closeLightbox()">&times;</div>
 
   <div class="modal-content">
 

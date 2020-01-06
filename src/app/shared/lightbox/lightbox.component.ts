@@ -16,4 +16,8 @@ export class LightboxComponent implements OnInit {
   ngOnInit() {
   }
 
+  closeLightbox() {
+    this.lightboxService.showModal = false;
+  }
+
 }
