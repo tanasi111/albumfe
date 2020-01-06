@@ -20,6 +20,8 @@ export class LightboxComponent implements OnInit {
     this.lightboxService.closeLightbox();
   }
 
-  changeSlide(count: number) { }
+  changeSlide(count: number) {
+    this.lightboxService.changeSlide(count);
+  }
 
 }

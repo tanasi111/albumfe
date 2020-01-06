@@ -22,8 +22,8 @@ export class PhotoComponent implements OnInit {
     this.photoUrl = `https://i.picsum.photos/id/${this.photo.id}/640/480.jpg`;
   }
 
-  openLightbox(photoUrl: string) {
-    this.lightboxService.openLightbox(photoUrl);
+  openLightbox(photoUrl: string, photoId: number) {
+    this.lightboxService.openLightbox(photoUrl, photoId);
   }
 
 }
