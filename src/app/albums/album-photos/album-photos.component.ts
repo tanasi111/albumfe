@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../album.service';
-import { LayoutService } from 'src/app/layout.service';
+import { LayoutService } from 'src/app/shared/layout/layout.service';
 
 @Component({
   selector: 'app-album-photos',

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LayoutService } from 'src/app/layout.service';
+import { LayoutService } from 'src/app/shared/layout/layout.service';
 
 @Component({
   selector: 'app-photo',
