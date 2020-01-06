@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightboxComponent implements OnInit {
 
+  imageUrl = 'https://i.picsum.photos/id/456/640/480.jpg';
   constructor() { }
 
   ngOnInit() {
