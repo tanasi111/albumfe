@@ -1,16 +1,18 @@
-<aside class="modal"
+<aside class="lightbox-modal"
        [class.show-modal]="lightboxService.showModal"
        [class.hide-modal]="!lightboxService.showModal">
 
-  <div class="close"
+  <div class="lightbox-close"
        (click)="closeLightbox()">&times;</div>
 
-  <div class="modal-content">
-
-    <img class="photo-image"
-         src="{{lightboxService.imageUrl}}"
-         onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';" />
-
-  </div>
+  <a class="lightbox-previous"
+     (click)="changeSlide(-1)">&larr;</a>
+  <!-- <div class="modal-content"> -->
+  <img class="lightbox-image"
+       src="{{lightboxService.imageUrl}}"
+       onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';" />
+  <!-- </div> -->
+  <a class="lightbox-next"
+     (click)="changeSlide(1)">&rarr;</a>
 
 </aside>

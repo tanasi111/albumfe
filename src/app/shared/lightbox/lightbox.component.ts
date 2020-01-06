@@ -20,4 +20,6 @@ export class LightboxComponent implements OnInit {
     this.lightboxService.showModal = false;
   }
 
+  changeSlide(count: number) { }
+
 }

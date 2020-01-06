@@ -1,4 +1,4 @@
-.modal {
+.lightbox-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -20,7 +20,12 @@
   display: none;
 }
 
-.close {
+.lightbox-image {
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.lightbox-close {
   color: black;
   position: absolute;
   top: 10px;
@@ -28,6 +33,16 @@
   font-size: 53px;
 }
 
-.close:hover {
+.lightbox-close:hover {
+  cursor: pointer;
+}
+
+.lightbox-previous,
+.lightbox-next {
+  font-size: 53px;
+}
+
+.lightbox-previous:hover,
+.lightbox-next:hover {
   cursor: pointer;
 }
