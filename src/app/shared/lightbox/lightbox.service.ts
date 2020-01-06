@@ -15,4 +15,8 @@ export class LightboxService {
     this.imageUrl = imageUrl;
     this.showModal = true;
   }
+
+  closeLightbox() {
+    this.showModal = false;
+  }
 }

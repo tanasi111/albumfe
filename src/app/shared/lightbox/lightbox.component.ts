@@ -17,7 +17,7 @@ export class LightboxComponent implements OnInit {
   }
 
   closeLightbox() {
-    this.lightboxService.showModal = false;
+    this.lightboxService.closeLightbox();
   }
 
   changeSlide(count: number) { }
