@@ -12,6 +12,7 @@ import { AlbumPhotosComponent } from './albums/album-photos/album-photos.compone
 import { PhotoComponent } from './albums/photo/photo.component';
 import { SharedModule } from './shared/shared.module';
 import { FilterPipe } from './filter.pipe';
+import { LightboxComponent } from './shared/lightbox/lightbox.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FilterPipe } from './filter.pipe';
     AlbumPreviewComponent,
     AlbumPhotosComponent,
     PhotoComponent,
-    FilterPipe
+    FilterPipe,
+    LightboxComponent
   ],
   imports: [
     SharedModule,
