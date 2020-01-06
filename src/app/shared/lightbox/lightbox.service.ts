@@ -7,6 +7,8 @@ export class LightboxService {
 
   imageUrl: string;
   showModal: boolean;
+  images: any;
+
   constructor() {
     this.showModal = false;
   }
