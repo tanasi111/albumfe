@@ -5,5 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class LightboxService {
 
-  constructor() { }
+  imageUrl: string;
+  showModal: boolean;
+  constructor() {
+    this.showModal = false;
+  }
+
+  openLightbox(imageUrl: string) {
+    this.imageUrl = imageUrl;
+    this.showModal = true;
+  }
 }

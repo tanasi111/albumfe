@@ -1,5 +1,5 @@
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   z-index: 1;
   padding: 10px 62px 0px 62px;
@@ -9,4 +9,8 @@
   height: 100%;
   overflow: auto;
   background-color: black;
+}
+
+.show-modal {
+  display: flex;
 }

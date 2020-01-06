@@ -1,9 +1,11 @@
-<aside class="modal">
+<aside class="modal"
+       [class.show-modal]="lightboxService.showModal">
 
   <div class="modal-content">
 
     <img class="photo-image"
-         src="{{imageUrl}}" />
+         src="{{lightboxService.imageUrl}}"
+         onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';" />
 
   </div>
 

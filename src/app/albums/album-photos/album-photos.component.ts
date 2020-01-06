@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../album.service';
 import { LayoutService } from 'src/app/shared/layout/layout.service';
+import { LightboxService } from 'src/app/shared/lightbox/lightbox.service';
 
 @Component({
   selector: 'app-album-photos',
@@ -18,7 +19,8 @@ export class AlbumPhotosComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private albumService: AlbumService,
-    private layoutService: LayoutService
+    private layoutService: LayoutService,
+    private lightboxService: LightboxService
   ) { }
 
   ngOnInit() {
@@ -29,6 +31,7 @@ export class AlbumPhotosComponent implements OnInit {
       this.albumTitle = params[title];
       console.log('album id: ' + this.albumId);
       this.getAlbumPhotos(this.albumId);
+      this.lightboxService.showModal = false;
     });
   }
 

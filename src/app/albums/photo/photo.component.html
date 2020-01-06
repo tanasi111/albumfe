@@ -1,6 +1,7 @@
 <div class="photo"
      [class.set-list]="!layoutService.gridLayout">
   <img class="photo-image"
+       (click)="openLightbox(photoUrl)"
        src="https://i.picsum.photos/id/{{photo.id}}/640/480.jpg"
        onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';">
   <div class="photo-title">{{photo.title}}</div>
