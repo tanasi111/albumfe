@@ -31,7 +31,7 @@ export class AlbumPhotosComponent implements OnInit {
       this.albumTitle = params[title];
       console.log('album id: ' + this.albumId);
       this.getAlbumPhotos(this.albumId);
-      this.lightboxService.showModal = false;
+      this.lightboxService.showLightbox = false;
     });
   }
 

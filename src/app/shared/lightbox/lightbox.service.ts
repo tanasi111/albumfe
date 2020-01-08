@@ -10,23 +10,23 @@ export class LightboxService {
   imageId: number;
   nextImageUrl: string;
 
-  showModal: boolean;
+  showLightbox: boolean;
   images: any;
 
   constructor() {
-    this.showModal = false;
+    this.showLightbox = false;
   }
 
   openLightbox(imageUrl: string, imageId: number) {
     this.imageUrl = imageUrl;
     this.imageId = imageId;
-    this.showModal = true;
+    this.showLightbox = true;
     const $body = window.document.body;
     $body.style.overflow = 'hidden';
   }
 
   closeLightbox() {
-    this.showModal = false;
+    this.showLightbox = false;
     const $body = window.document.body;
     $body.style.overflow = 'visible';
   }
