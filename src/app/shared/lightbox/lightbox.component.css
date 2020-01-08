@@ -40,9 +40,16 @@
 .lightbox-previous,
 .lightbox-next {
   font-size: 53px;
+  color: black;
+  user-select: none;
 }
 
 .lightbox-previous:hover,
 .lightbox-next:hover {
   cursor: pointer;
+}
+
+.disabled {
+  color: #E5E5E5;
+  cursor: default !important;
 }

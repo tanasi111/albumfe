@@ -6,11 +6,13 @@
        (click)="closeLightbox()">&times;</div>
 
   <a class="lightbox-previous"
+     [class.disabled]="lightboxService.imageId == lightboxService.firstImageId"
      (click)="changeSlide(-1)">&larr;</a>
   <img class="lightbox-image"
        src="{{lightboxService.imageUrl}}"
        onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';" />
   <a class="lightbox-next"
+     [class.disabled]="lightboxService.imageId == lightboxService.lastImageId"
      (click)="changeSlide(1)">&rarr;</a>
 
 </aside>
