@@ -32,11 +32,8 @@ export class LightboxService {
   }
 
   changeSlide(count: number) {
-    console.log(count);
-    console.log(this.imageId);
     this.imageId = count + this.imageId;
     this.imageUrl = `https://i.picsum.photos/id/${this.imageId}/640/480.jpg`;
-    console.log(this.imageUrl);
   }
 
 }
