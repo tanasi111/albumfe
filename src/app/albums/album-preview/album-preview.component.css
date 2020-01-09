@@ -26,19 +26,6 @@
   grid-column-gap: 30px;
 }
 
-.delete-icon {
-  padding-top: 10px;
-  margin-left: 10px;
-}
-
-.delete-icon-image {
-  height: 24px;
-}
-
-.delete-icon-image:hover {
-  background-image: url(../../../assets/icons/delete-hover.png);
-}
-
 .title-and-icon {
   display: flex;
   justify-content: space-between;

@@ -8,10 +8,9 @@
   <div class="title-and-icon"
        [class.title-and-icon-rows]="!layoutService.gridLayout">
     <div class="photo-title">{{photo.title}}</div>
-    <div class="delete-icon">
-      <img class="delete-icon-image"
-           src="../../../assets/icons/delete.png" />
-    </div>
+
+    <app-delete-icon></app-delete-icon>
+
   </div>
 
 </div>
