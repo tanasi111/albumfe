@@ -1,9 +1,13 @@
+:root {
+  --photo-title-color: #000000;
+}
+
 .photo-image {
   max-width: 100%;
 }
 
 .photo-title {
-  color: #000000;
+  color: var(--photo-title-color);
   font-size: 32px;
   font-weight: 100;
   line-height: 39px;
@@ -12,6 +16,7 @@
 
 .photo:hover {
   cursor: pointer;
+  --photo-title-color: #FFC23B;
 }
 
 .set-list {
