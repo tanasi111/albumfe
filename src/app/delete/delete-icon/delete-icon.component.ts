@@ -12,4 +12,8 @@ export class DeleteIconComponent implements OnInit {
   ngOnInit() {
   }
 
+  openDeleteDialog() {
+    alert('open delete dialog');
+  }
+
 }
