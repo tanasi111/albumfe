@@ -1,14 +1,17 @@
 <div class="album"
-     [class.set-list]="!layoutService.gridLayout"
-     [routerLink]="['/albums', album.id, album.title]">
+     [class.set-list]="!layoutService.gridLayout">
   <img class="album-image"
+       (mouseenter)="mouseEnterImage() "
+       (mouseleave)="mouseLeaveImage()"
+       [routerLink]="['/albums', album.id, album.title]"
        src="https://i.picsum.photos/id/{{album.id}}/640/480.jpg">
 
   <div class="title-and-icon"
        [class.title-and-icon-rows]="!layoutService.gridLayout">
 
     <div>
-      <div class="album-title">{{album.title}}</div>
+      <div class="album-title"
+           [class.album-title-yellow]="mouseOverImage">{{album.title}}</div>
       <div class="album-createdby">kreirao: tralala</div>
     </div>
 

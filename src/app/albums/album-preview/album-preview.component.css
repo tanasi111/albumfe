@@ -6,6 +6,10 @@
   max-width: 100%;
 }
 
+.album-image:hover {
+  cursor: pointer;
+}
+
 .album-title {
   /* --album-title-color: #000000; */
   color: var(--album-title-color);
@@ -15,8 +19,7 @@
   transition: 0.1s;
 }
 
-.album:hover {
-  cursor: pointer;
+.album-title-yellow {
   --album-title-color: #FFC23B;
 }
 

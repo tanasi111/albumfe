@@ -9,12 +9,20 @@ import { LayoutService } from 'src/app/shared/layout/layout.service';
 export class AlbumPreviewComponent implements OnInit {
 
   @Input() album: any;
-
+  mouseOverImage: boolean;
   constructor(
     private layoutService: LayoutService
   ) { }
 
   ngOnInit() {
+  }
+
+  mouseEnterImage() {
+    this.mouseOverImage = true;
+  }
+
+  mouseLeaveImage() {
+    this.mouseOverImage = false;
   }
 
 }
