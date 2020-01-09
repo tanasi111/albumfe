@@ -1,22 +1,21 @@
-:root {
-  --photo-title-color: #000000;
-}
-
 .photo-image {
   max-width: 100%;
 }
 
+.photo-image:hover {
+  cursor: pointer;
+}
+
 .photo-title {
-  color: var(--photo-title-color);
+  color: #000000;
   font-size: 32px;
   font-weight: 100;
   line-height: 39px;
   transition: 0.1s;
 }
 
-.photo:hover {
-  cursor: pointer;
-  --photo-title-color: #FFC23B;
+.photo-title-yellow {
+  color: #FFC23B;
 }
 
 .set-list {

@@ -2,12 +2,15 @@
      [class.set-list]="!layoutService.gridLayout">
   <img class="photo-image"
        (click)="openLightbox(photoUrl, photo.id)"
+       (mouseenter)="mouseEnterImage() "
+       (mouseleave)="mouseLeaveImage()"
        src="https://i.picsum.photos/id/{{photo.id}}/640/480.jpg"
        onerror="this.src='https://i.picsum.photos/id/456/640/480.jpg';">
 
   <div class="title-and-icon"
        [class.title-and-icon-rows]="!layoutService.gridLayout">
-    <div class="photo-title">{{photo.title}}</div>
+    <div class="photo-title"
+         [class.photo-title-yellow]="mouseOverImage">{{photo.title}}</div>
 
     <app-delete-icon></app-delete-icon>
 

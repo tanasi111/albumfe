@@ -12,6 +12,7 @@ export class PhotoComponent implements OnInit {
   @Input() albumTitle: string;
   @Input() photo: any;
   photoUrl: string;
+  mouseOverImage: boolean;
 
   constructor(
     private layoutService: LayoutService,
@@ -24,6 +25,14 @@ export class PhotoComponent implements OnInit {
 
   openLightbox(photoUrl: string, photoId: number) {
     this.lightboxService.openLightbox(photoUrl, photoId);
+  }
+
+  mouseEnterImage() {
+    this.mouseOverImage = true;
+  }
+
+  mouseLeaveImage() {
+    this.mouseOverImage = false;
   }
 
 }

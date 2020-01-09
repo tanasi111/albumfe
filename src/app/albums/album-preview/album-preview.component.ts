@@ -10,6 +10,7 @@ export class AlbumPreviewComponent implements OnInit {
 
   @Input() album: any;
   mouseOverImage: boolean;
+
   constructor(
     private layoutService: LayoutService
   ) { }
