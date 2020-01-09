@@ -43,7 +43,7 @@ export class AlbumsComponent implements OnInit {
   onScroll(): void {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       // at the bottom of the page
-      this.albums.push(...this.albums);
+      // this.albums.push(...this.albums);
     }
   }
 

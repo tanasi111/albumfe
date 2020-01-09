@@ -19,3 +19,7 @@
   grid-template-columns: 33% 1fr;
   grid-column-gap: 30px;
 }
+
+.delete-icon:hover {
+  background-image: url(../../../assets/icons/delete-hover.png);
+}
