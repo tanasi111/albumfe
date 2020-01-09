@@ -8,5 +8,6 @@
 }
 
 .delete-icon-image:hover {
+  cursor: pointer;
   background-image: url(../../../assets/icons/delete-hover.png);
 }
