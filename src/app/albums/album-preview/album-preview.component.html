@@ -3,8 +3,20 @@
      [routerLink]="['/albums', album.id, album.title]">
   <img class="album-image"
        src="https://i.picsum.photos/id/{{album.id}}/640/480.jpg">
-  <div>
-    <div class="album-title">{{album.title}}</div>
-    <div class="album-createdby">kreirao: tralala</div>
+
+  <div class="title-and-icon"
+       [class.title-and-icon-rows]="!layoutService.gridLayout">
+
+    <div>
+      <div class="album-title">{{album.title}}</div>
+      <div class="album-createdby">kreirao: tralala</div>
+    </div>
+
+    <div class="delete-icon">
+      <img class="delete-icon-image"
+           src="../../../assets/icons/delete.png" />
+    </div>
+
   </div>
+
 </div>
