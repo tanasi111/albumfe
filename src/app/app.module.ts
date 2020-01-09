@@ -13,7 +13,8 @@ import { PhotoComponent } from './albums/photo/photo.component';
 import { SharedModule } from './shared/shared.module';
 import { FilterPipe } from './filter.pipe';
 import { LightboxComponent } from './shared/lightbox/lightbox.component';
-import { DeleteIconComponent } from './albums/delete-icon/delete-icon.component';
+import { DeleteIconComponent } from './delete/delete-icon/delete-icon.component';
+import { DeleteDialogComponent } from './delete/delete-dialog/delete-dialog.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DeleteIconComponent } from './albums/delete-icon/delete-icon.component'
     PhotoComponent,
     FilterPipe,
     LightboxComponent,
-    DeleteIconComponent
+    DeleteIconComponent,
+    DeleteDialogComponent
   ],
   imports: [
     SharedModule,
