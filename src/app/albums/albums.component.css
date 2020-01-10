@@ -28,3 +28,20 @@
 .set-list {
   grid-template-columns: 1fr;
 }
+
+@media only screen and (max-width: 750px) {
+
+  .albums {
+    padding: 15px;
+  }
+
+  .albums-owner {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+  }
+
+  .albums-list {
+    grid-template-columns: 1fr;
+  }
+}
