@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LayoutService } from 'src/app/shared/layout/layout.service';
+import { DeleteService } from 'src/app/delete/delete.service';
 
 @Component({
   selector: 'app-album-preview',
@@ -12,7 +13,8 @@ export class AlbumPreviewComponent implements OnInit {
   mouseOverImage: boolean;
 
   constructor(
-    private layoutService: LayoutService
+    private layoutService: LayoutService,
+    private deleteService: DeleteService
   ) { }
 
   ngOnInit() {
@@ -24,6 +26,10 @@ export class AlbumPreviewComponent implements OnInit {
 
   mouseLeaveImage() {
     this.mouseOverImage = false;
+  }
+
+  deletedAlbum(): boolean {
+    return this.deleteService.deletedAlbums.includes(this.album.id);
   }
 
 }

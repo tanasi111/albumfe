@@ -1,4 +1,5 @@
-<div class="photo"
+<div *ngIf="!deletedPhoto()"
+     class="photo"
      [class.set-list]="!layoutService.gridLayout">
   <img class="photo-image"
        (click)="openLightbox(photoUrl, photo.id)"
@@ -18,3 +19,5 @@
   </div>
 
 </div>
+
+<p *ngIf="deletedPhoto()">OBRISANA SLIKA</p>

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LayoutService } from 'src/app/shared/layout/layout.service';
 import { LightboxService } from 'src/app/shared/lightbox/lightbox.service';
+import { DeleteService } from 'src/app/delete/delete.service';
 
 @Component({
   selector: 'app-photo',
@@ -16,7 +17,8 @@ export class PhotoComponent implements OnInit {
 
   constructor(
     private layoutService: LayoutService,
-    private lightboxService: LightboxService
+    private lightboxService: LightboxService,
+    private deleteService: DeleteService
   ) { }
 
   ngOnInit() {
@@ -33,6 +35,10 @@ export class PhotoComponent implements OnInit {
 
   mouseLeaveImage() {
     this.mouseOverImage = false;
+  }
+
+  deletedPhoto(): boolean {
+    return this.deleteService.deletedPhotos.includes(this.photo.id);
   }
 
 }

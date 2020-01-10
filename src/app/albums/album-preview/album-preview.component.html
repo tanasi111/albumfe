@@ -1,4 +1,5 @@
-<div class="album"
+<div *ngIf="!deletedAlbum()"
+     class="album"
      [class.set-list]="!layoutService.gridLayout">
   <img class="album-image"
        (mouseenter)="mouseEnterImage() "
@@ -21,3 +22,5 @@
   </div>
 
 </div>
+
+<p *ngIf="deletedAlbum()">OBRISAN ALBUM</p>
