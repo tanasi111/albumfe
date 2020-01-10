@@ -7,7 +7,13 @@
         (click)="closeDeleteDialog()">&times;</span>
 
   <div class="delete-dialog-content">
-    <p>Da li ste sigurni da zelite da obrisete?</p>
+    <p class="delete-dialog-question">Da li ste sigurni da zelite da obrisete?</p>
+    <div class="delete-dialog-buttons">
+      <p class="button">Da</p>
+      <span class="dot">&#8226;</span>
+      <p class="button"
+         (click)="closeDeleteDialog()">Ne</p>
+    </div>
   </div>
 
 </div>
