@@ -32,3 +32,13 @@
 .title-and-icon-rows {
   flex-direction: column;
 }
+
+@media only screen and (max-width: 750px) {
+
+  .album-title {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20px;
+  }
+
+}
