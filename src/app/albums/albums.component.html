@@ -7,8 +7,7 @@
   <div class="albums-list"
        [class.set-list]="!layoutService.gridLayout">
     <app-album-preview *ngFor="let album of albums"
-                       [album]="album"
-                       [attr.disabled]="true"></app-album-preview>
+                       [album]="album"></app-album-preview>
   </div>
 
 </div>
