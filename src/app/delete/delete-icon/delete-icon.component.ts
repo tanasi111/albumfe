@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeleteService } from '../delete.service';
 
 @Component({
   selector: 'app-delete-icon',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteIconComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private deleteService: DeleteService
+  ) { }
 
   ngOnInit() {
   }
 
   openDeleteDialog() {
-    alert('open delete dialog');
+    this.deleteService.openDeleteDialog();
   }
 
 }

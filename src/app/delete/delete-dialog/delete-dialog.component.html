@@ -1,1 +1,9 @@
-<p>delete-dialog works!</p>
+<div class="delete-dialog"
+     [class.show-modal]="deleteService.showDeleteDialog"
+     [class.hide-modal]="!deleteService.showDeleteDialog">
+
+  <span class="close-delete-dialog"
+        title="Close Modal"
+        (click)="closeDeleteDialog()">&times;</span>
+
+</div>
