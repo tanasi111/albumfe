@@ -7,17 +7,28 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #474e5d;
+  background-color: #474e5dbe;
   padding-top: 50px;
 }
 
-.close-delete-dialog {
+.delete-dialog-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
   position: absolute;
   right: 35px;
   top: 15px;
   font-size: 40px;
   font-weight: bold;
   color: #f1f1f1;
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 .show-modal {

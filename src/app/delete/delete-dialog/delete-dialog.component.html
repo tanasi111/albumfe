@@ -2,8 +2,12 @@
      [class.show-modal]="deleteService.showDeleteDialog"
      [class.hide-modal]="!deleteService.showDeleteDialog">
 
-  <span class="close-delete-dialog"
-        title="Close Modal"
+  <span class="close"
+        title="Close dialog"
         (click)="closeDeleteDialog()">&times;</span>
+
+  <div class="delete-dialog-content">
+    <p>Da li ste sigurni da zelite da obrisete?</p>
+  </div>
 
 </div>
