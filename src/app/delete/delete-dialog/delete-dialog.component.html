@@ -9,7 +9,8 @@
   <div class="delete-dialog-content">
     <p class="delete-dialog-question">Da li ste sigurni da zelite da obrisete?</p>
     <div class="delete-dialog-buttons">
-      <p class="button">Da</p>
+      <p class="button"
+         (click)="delete()">Da</p>
       <span class="dot">&#8226;</span>
       <p class="button"
          (click)="closeDeleteDialog()">Ne</p>

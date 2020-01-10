@@ -12,7 +12,8 @@
     <div class="photo-title"
          [class.photo-title-yellow]="mouseOverImage">{{photo.title}}</div>
 
-    <app-delete-icon></app-delete-icon>
+    <app-delete-icon [album]=null
+                     [photo]="photo"></app-delete-icon>
 
   </div>
 

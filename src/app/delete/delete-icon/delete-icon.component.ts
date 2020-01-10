@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DeleteService } from '../delete.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { DeleteService } from '../delete.service';
 })
 export class DeleteIconComponent implements OnInit {
 
+  @Input() photo: any;
+  @Input() album: any;
   constructor(
     private deleteService: DeleteService
   ) { }
@@ -16,7 +18,7 @@ export class DeleteIconComponent implements OnInit {
   }
 
   openDeleteDialog() {
-    this.deleteService.openDeleteDialog();
+    this.deleteService.openDeleteDialog(this.album, this.photo);
   }
 
 }

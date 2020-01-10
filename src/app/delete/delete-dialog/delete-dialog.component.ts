@@ -19,4 +19,9 @@ export class DeleteDialogComponent implements OnInit {
     this.deleteService.closeDeleteDialog();
   }
 
+  delete() {
+    this.deleteService.delete();
+    this.deleteService.closeDeleteDialog();
+  }
+
 }
