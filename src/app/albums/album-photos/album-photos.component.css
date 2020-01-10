@@ -49,3 +49,37 @@
   font-weight: 100;
   margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 750px) {
+
+  .album {
+    padding: 40px 15px 15px 15px;
+  }
+
+  .back-button {
+    margin: 15px 0 10px 15px;
+  }
+
+  .album-info-and-layout {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+
+  .album-title {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+  }
+
+  .album-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .album-search-input {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+
+}
