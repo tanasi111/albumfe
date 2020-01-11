@@ -41,7 +41,6 @@ export class AlbumPhotosComponent implements OnInit {
 
     this.albumService.getAlbumPhotos(albumId)
       .subscribe((data) => {
-        // this.photos = data;
         this.loadDataService.getPhotos(data);
         this.lightboxService.images = data;
       });
