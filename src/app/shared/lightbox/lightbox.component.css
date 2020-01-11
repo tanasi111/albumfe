@@ -53,3 +53,22 @@
   color: #E5E5E5;
   cursor: default !important;
 }
+
+@media only screen and (max-width: 750px) {
+
+  .lightbox-image {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .lightbox-previous {
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  .lightbox-next {
+    padding-right: 5px;
+    font-size: 20px;
+  }
+
+}
