@@ -40,14 +40,19 @@
   grid-template-columns: 1fr;
 }
 
-.album-search-input {
+.album-search {
   border-style: hidden hidden solid hidden;
   border-color: black;
   border-width: 2px;
+  margin-bottom: 20px;
+}
+
+.album-search-input {
+  border-style: hidden hidden hidden hidden;
   font-size: 32px;
   line-height: 39px;
   font-weight: 100;
-  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 750px) {
