@@ -16,7 +16,7 @@
 
   <div class="album-photos"
        [class.set-list]="!layoutService.gridLayout">
-    <app-photo *ngFor="let photo of photos | filter:searchText"
+    <app-photo *ngFor="let photo of loadDataService.photos | filter:searchText"
                [albumTitle]="albumTitle"
                [photo]="photo"></app-photo>
   </div>
