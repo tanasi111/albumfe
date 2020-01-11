@@ -66,3 +66,25 @@
 .hide-modal {
   display: none;
 }
+
+@media only screen and (max-width: 750px) {
+
+  .delete-dialog-content {
+    align-self: center;
+    height: 300px;
+    margin: 5% auto 5% auto;
+  }
+
+  .delete-dialog-question {
+    font-size: 20px;
+  }
+
+  .dot {
+    padding: 0 30px 0 30px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+}
