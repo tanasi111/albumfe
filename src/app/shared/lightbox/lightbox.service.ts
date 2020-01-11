@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
+import { DeleteService } from 'src/app/delete/delete.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,9 @@ export class LightboxService {
   showLightbox: boolean;
   images: any;
 
-  constructor() {
+  constructor(
+    private deletedService: DeleteService
+  ) {
     this.showLightbox = false;
   }
 
@@ -37,7 +40,12 @@ export class LightboxService {
   }
 
   changeSlide(count: number) {
-    const id = count + this.imageId;
+    let id = count + this.imageId;
+
+    while (this.deletedService.deletedPhotos.includes(id)) {
+      id = count + id;
+    }
+
     if (id >= this.firstImageId && id <= this.lastImageId) {
       this.imageId = id;
       this.imageUrl = `https://i.picsum.photos/id/${this.imageId}/640/480.jpg`;
