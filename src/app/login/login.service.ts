@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,8 @@ export class LoginService {
   // private httpOptions: any;
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router,
   ) {
     // this.httpOptions = {
     //   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,6 +21,11 @@ export class LoginService {
 
   public login(username: string, email: string) {
     return this.http.get(`${this.API_URL}/users?username=${username}&email=${email}`);
+  }
+
+  public logout() {
+    window.localStorage.removeItem('loged_in');
+    this.router.navigate(['/']);
   }
 
 }

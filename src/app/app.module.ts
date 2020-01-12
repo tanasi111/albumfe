@@ -15,6 +15,7 @@ import { FilterPipe } from './filter.pipe';
 import { LightboxComponent } from './shared/lightbox/lightbox.component';
 import { DeleteIconComponent } from './delete/delete-icon/delete-icon.component';
 import { DeleteDialogComponent } from './delete/delete-dialog/delete-dialog.component';
+import { LogoutComponent } from './shared/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DeleteDialogComponent } from './delete/delete-dialog/delete-dialog.comp
     FilterPipe,
     LightboxComponent,
     DeleteIconComponent,
-    DeleteDialogComponent
+    DeleteDialogComponent,
+    LogoutComponent
   ],
   imports: [
     SharedModule,
