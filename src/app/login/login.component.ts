@@ -12,8 +12,8 @@ import { AuthGuardService } from '../auth-guard.service';
 export class LoginComponent implements OnInit {
 
   loginForm = new FormGroup({
-    username: new FormControl('Antonette', [Validators.required]),
-    email: new FormControl('Shanna@melissa.tv', [Validators.required]),
+    username: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required]),
   });
   loginError: boolean;
 
